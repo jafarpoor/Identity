@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "UserRoles";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<a asp-action="Index"> @ViewBag.UserInfo</a>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in Model)
+            {
+              <tr>
+                  <td>
+                      @item
+                  </td>
+              </tr>
+            }
+
+    </tbody>
+</table>
+
